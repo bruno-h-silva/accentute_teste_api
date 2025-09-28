@@ -1,0 +1,6 @@
+{
+  "userId": "string",
+  "collectionOfIsbns": [
+    { "isbn": "string" }
+  ]
+}
