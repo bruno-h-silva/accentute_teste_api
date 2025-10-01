@@ -51,14 +51,3 @@ Cypress.Commands.add('getUserDetails', (baseUrl, token, userId) => {
         failOnStatusCode: false 
     });
 });
-
-Cypress.Commands.add("delete", (baseUrl, endpoint, body = null, headers = {}) => {
-    const url = `${baseUrl.replace(/\/+$/, '')}/${endpoint.replace(/^\/+/, '')}`;
-    return cy.request({
-        method: "DELETE",
-        url,
-        body,
-        headers,
-        failOnStatusCode: false
-    });
-});
